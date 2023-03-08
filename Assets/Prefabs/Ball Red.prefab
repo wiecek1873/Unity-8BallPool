@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f5b8267220afc554ebc63d52968c2a88, type: 2}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
-      value: Ball
+      value: Ball Red
       objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7559956140702187880, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5b8267220afc554ebc63d52968c2a88, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}

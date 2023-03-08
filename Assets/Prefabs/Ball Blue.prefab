@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5024595563416534067, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c637523e9e066a48bf2c59a91e71a8f, type: 2}
     - target: {fileID: 8646525323271694228, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646525323271694232, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_Name
-      value: Ball
+      value: Ball Blue
       objectReference: {fileID: 0}
     - target: {fileID: 8646525323271694234, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_Materials.Array.data[0]
