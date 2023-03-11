@@ -13,7 +13,10 @@ public class ShotState_AimForce : ShotState
         force = forceMin;
     }
 
-    public override void OnStateEnter() { }
+    public override void OnStateEnter()
+    {
+        context.Visualization.gameObject.SetActive(true);
+    }
 
     public override void Execute()
     {
@@ -23,16 +26,26 @@ public class ShotState_AimForce : ShotState
 
         }
 
+        updateVisualisation();
+
         if (context.PlayerInput.GetSpaceKeyUp())
         {
             context.ChangeState(nextState);
         }
     }
 
-    public override void OnStateExit() { }
+    public override void OnStateExit()
+    {
+        context.Visualization.gameObject.SetActive(false);
+    }
 
     public float GetForce()
     {
         return force;
+    }
+
+    private void updateVisualisation()
+    {
+        context.Visualization.SetLengthClamped(Mathf.InverseLerp(forceMin, forceMax, force));
     }
 }

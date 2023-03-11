@@ -2953,6 +2953,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1702054673}
     m_Modifications:
+    - target: {fileID: 1438557622631417975, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750884771764565180, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4636882684673495435, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
       propertyPath: board
       value: 

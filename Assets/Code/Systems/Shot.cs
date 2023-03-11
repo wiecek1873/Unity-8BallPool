@@ -4,6 +4,7 @@ public class Shot : MonoBehaviour
 {
     public Ball TargetBall = null;
     public PlayerInput PlayerInput = null;
+    public ShotVisualization Visualization = null;
 
     [SerializeField] private ShotState startState = null;
 

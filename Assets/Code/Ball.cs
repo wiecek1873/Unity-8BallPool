@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private const float VELOCITY_MIN = 0.1f;
-
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Rigidbody rb = null;
 
     private void OnDisable()
     {
@@ -13,7 +11,7 @@ public class Ball : MonoBehaviour
 
     public bool IsMoving()
     {
-        return rb.velocity.magnitude > VELOCITY_MIN;
+        return rb.IsSleeping() == false;
     }
 
     public void AddForce(Vector3 _force, ForceMode _forceMode)

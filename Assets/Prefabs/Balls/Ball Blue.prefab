@@ -55,10 +55,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8646525323271694229, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 8646525323271694232, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_Name
       value: Ball Blue
