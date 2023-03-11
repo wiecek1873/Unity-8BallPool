@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-    [Header("States")]
-    public ShotStateDirection StateDirection = null;
-    public ShotStateForce StateForce = null;
-    public ShotStateWait StateWait = null;
+    public Ball TargetBall = null;
+    public PlayerInput PlayerInput = null;
+
+    [SerializeField] private ShotState startState = null;
 
     private ShotState stateCurrent = null;
 
     private void Start()
     {
-        ChangeState(StateDirection);
+        ChangeState(startState);
     }
 
     private void Update()

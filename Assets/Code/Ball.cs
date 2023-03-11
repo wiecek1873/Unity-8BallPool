@@ -8,11 +8,11 @@ public class Ball : MonoBehaviour
 
     public bool IsMoving()
     {
-        if (rb == null)
-        {
-            return false;
-        }
-
         return rb.velocity.magnitude > VELOCITY_MIN;
+    }
+
+    public void AddForce(Vector3 _force, ForceMode _forceMode)
+    {
+        rb.AddForce(_force, _forceMode);
     }
 }

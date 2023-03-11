@@ -10,7 +10,7 @@ public class ShotStateWait : ShotState
     {
         if (board.IsAnyBallMoving() == false)
         {
-            shot.ChangeState(shot.StateDirection);
+            context.ChangeState(nextState);
         }
     }
 
