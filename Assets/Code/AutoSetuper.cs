@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class AutoSetuper : MonoBehaviour
 {
+#if UNITY_EDITOR
+
     [SerializeField] private bool onAwake = false;
 
+    [ContextMenu("Auto setup")]
     private void Awake()
     {
         if (onAwake == false)
@@ -15,12 +18,12 @@ public class AutoSetuper : MonoBehaviour
 
         foreach (MonoBehaviour _monoBehaviour in _monoBehaviours)
         {
-            IAutoSetupable _autoSetupable = _monoBehaviour as IAutoSetupable;
-
-            if (_autoSetupable != null)
+            if (_monoBehaviour is IAutoSetupable _autoSetupable)
             {
                 _autoSetupable.AutoSetup();
             }
         }
     }
+
+#endif
 }
