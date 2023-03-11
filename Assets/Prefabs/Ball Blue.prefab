@@ -98,3 +98,17 @@ MonoBehaviour:
   pointsCounter: {fileID: 0}
   points: 10
   collisionTag: Pole
+--- !u!114 &3086004010070613191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534177690782735043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b064cd80260c5c45ba5db80281590cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionHandler: {fileID: 4599928949005052084}
+  collisionTag: Pole

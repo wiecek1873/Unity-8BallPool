@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoveBall : MonoBehaviour
+public class BallMove : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput = null;
     [SerializeField] private Board board = null;

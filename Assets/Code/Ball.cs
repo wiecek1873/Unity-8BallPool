@@ -8,6 +8,11 @@ public class Ball : MonoBehaviour
 
     public bool IsMoving()
     {
+        if (rb == null)
+        {
+            return false;
+        }
+
         return rb.velocity.magnitude > VELOCITY_MIN;
     }
 }
