@@ -39,7 +39,7 @@ public class ShotState_AimDirection : ShotState
     private void updateDirection()
     {
         Vector3 _inputDirection = new Vector3(context.PlayerInput.GetHorizontalAxis(), 0f, context.PlayerInput.GetVerticalAxis()).normalized;
-        direction = Quaternion.RotateTowards(direction, Quaternion.LookRotation(_inputDirection, Vector3.up), 180f * Time.deltaTime);
+        direction = Quaternion.RotateTowards(direction, Quaternion.LookRotation(_inputDirection, Vector3.up), maxDegreesDelta * Time.deltaTime);
     }
 
     private void updateVisualisation()

@@ -3,6 +3,18 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb = null;
+    [SerializeField] private float maxAngularVelocity = 100f;
+    [SerializeField] private AnimationCurve angularDragPerVelocity = AnimationCurve.Linear(0f, 2.5f, 1f, 0.05f);
+
+    public void Awake()
+    {
+        rb.maxAngularVelocity = maxAngularVelocity;
+    }
+
+    private void FixedUpdate()
+    {
+        rb.angularDrag = angularDragPerVelocity.Evaluate(rb.velocity.magnitude);
+    }
 
     private void OnDisable()
     {
