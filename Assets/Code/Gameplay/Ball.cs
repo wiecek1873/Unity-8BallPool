@@ -19,7 +19,7 @@ public class Ball : MonoBehaviour
 
     private void OnDisable()
     {
-        rb.Reset();
+        rb.Stop();
     }
 
     public bool IsMoving()
