@@ -1,8 +1,9 @@
 using Pool.Utilites.AutoSetup;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class Board : MonoBehaviour, IAutoSetupable
+public partial class Board : MonoBehaviour
 {
     [SerializeField] private List<Ball> balls = new();
 
@@ -18,12 +19,17 @@ public class Board : MonoBehaviour, IAutoSetupable
 
         return false;
     }
+}
 
+#if UNITY_EDITOR
+public partial class Board : IAutoSetupable
+{
     [ContextMenu("AutoSetup")]
     public void AutoSetup()
     {
         balls = new();
         balls.AddRange(FindObjectsOfType<Ball>());
+        EditorUtility.SetDirty(this);
     }
 }
-
+#endif

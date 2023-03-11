@@ -1,7 +1,8 @@
 using Pool.Utilites.AutoSetup;
+using UnityEditor;
 using UnityEngine;
 
-public class OnCollisionAddScore : OnCollisionBase, IAutoSetupable
+public partial class OnCollisionAddScore : OnCollisionBase
 {
     [SerializeField] private ScoreCounter pointsCounter = null;
     [SerializeField] private int score = 0;
@@ -17,11 +18,6 @@ public class OnCollisionAddScore : OnCollisionBase, IAutoSetupable
         addScore();
     }
 
-    public void AutoSetup()
-    {
-        pointsCounter = FindObjectOfType<ScoreCounter>();
-    }
-
     private void addScore()
     {
         if (pointsCounter == null)
@@ -32,3 +28,15 @@ public class OnCollisionAddScore : OnCollisionBase, IAutoSetupable
         pointsCounter.AddScore(score);
     }
 }
+
+#if UNITY_EDITOR
+public partial class OnCollisionAddScore : IAutoSetupable
+{
+    [ContextMenu("AutoSetup")]
+    public void AutoSetup()
+    {
+        pointsCounter = pointsCounter != null ? pointsCounter : FindObjectOfType<ScoreCounter>();
+        EditorUtility.SetDirty(this);
+    }
+}
+#endif

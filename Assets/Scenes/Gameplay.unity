@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8990121561442966663, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
 --- !u!4 &77095322 stripped
@@ -185,6 +189,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2598583399953625147, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
   m_PrefabInstance: {fileID: 77095321}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &77095323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1189627103794042771, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+  m_PrefabInstance: {fileID: 77095321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a87f944018c7ba41a79fa5b62f44483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &109894559
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +323,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (1)
@@ -381,6 +400,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (3)
@@ -552,6 +575,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (7)
@@ -725,6 +752,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (2)
@@ -1285,6 +1316,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (5)
@@ -1627,6 +1662,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue
@@ -2166,6 +2205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (6)
@@ -2341,6 +2384,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202785117}
     m_Modifications:
+    - target: {fileID: 4460830938312201721, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (4)
@@ -2462,6 +2509,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8990121561442966663, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
 --- !u!4 &1582764529 stripped
@@ -2469,6 +2520,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2598583399953625147, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
   m_PrefabInstance: {fileID: 1582764528}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1582764530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1189627103794042771, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+  m_PrefabInstance: {fileID: 1582764528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a87f944018c7ba41a79fa5b62f44483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1625866055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2524,6 +2586,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8990121561442966663, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
 --- !u!4 &1625866056 stripped
@@ -2531,6 +2597,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2598583399953625147, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
   m_PrefabInstance: {fileID: 1625866055}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1625866057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1189627103794042771, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+  m_PrefabInstance: {fileID: 1625866055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a87f944018c7ba41a79fa5b62f44483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1686661675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,19 +2737,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balls:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1530728204}
-  - {fileID: 1439181616}
-  - {fileID: 0}
-  - {fileID: 1242068724}
-  - {fileID: 1013958426}
-  - {fileID: 734522385}
-  - {fileID: 0}
-  - {fileID: 455801938}
-  - {fileID: 292070874}
-  - {fileID: 263141330}
+  - {fileID: 1798906464}
+  - {fileID: 1625866057}
+  - {fileID: 1582764530}
+  - {fileID: 77095323}
   - {fileID: 253349040}
+  - {fileID: 263141330}
+  - {fileID: 292070874}
+  - {fileID: 455801938}
+  - {fileID: 734522385}
+  - {fileID: 1013958426}
+  - {fileID: 1242068724}
+  - {fileID: 1439181616}
+  - {fileID: 1530728204}
 --- !u!1001 &1798906462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2728,6 +2805,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8990121561442966663, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+      propertyPath: pointsCounter
+      value: 
+      objectReference: {fileID: 1686661677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
 --- !u!4 &1798906463 stripped
@@ -2735,6 +2816,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2598583399953625147, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
   m_PrefabInstance: {fileID: 1798906462}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1798906464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1189627103794042771, guid: 72975db496e64dc419e97dbb19b3e4c2, type: 3}
+  m_PrefabInstance: {fileID: 1798906462}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a87f944018c7ba41a79fa5b62f44483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1887851541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4636882684961669214, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
