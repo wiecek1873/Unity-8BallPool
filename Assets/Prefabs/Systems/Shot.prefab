@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 959879132575621754}
+  lengthMin: 0.75
+  lengthMax: 2
 --- !u!1 &4636882684673495541
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: {fileID: 4636882684961669202}
   nextState: {fileID: 4636882685385930452}
-  forceMin: 0.25
+  forceMin: 1
   forceMax: 5
   maxDelta: 5
 --- !u!1 &6068540167626534418

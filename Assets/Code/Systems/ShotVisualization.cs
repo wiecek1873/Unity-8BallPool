@@ -3,17 +3,16 @@ using UnityEngine;
 public class ShotVisualization : MonoBehaviour
 {
     [SerializeField] private LineRenderer lineRenderer = null;
-    [SerializeField] private float lengthMin = 0.25f;
-    [SerializeField] private float lengthDefault = 1.0f;
+    [SerializeField] private float lengthMin = 0.75f;
     [SerializeField] private float lengthMax = 2f;
 
     private Vector3 startPosition = default;
     private Vector3 direction = default;
     private float length = 0f;
 
-    public void OnEnable()
+    public void Awake()
     {
-        length = lengthDefault;
+        length = lengthMin;
     }
 
     public void SetStartPosition(Vector3 _position)
@@ -28,9 +27,9 @@ public class ShotVisualization : MonoBehaviour
         updateLineRenderer();
     }
 
-    public void SetLengthClamped(float t)
+    public void SetLengthClamped(float _t)
     {
-        length = Mathf.Lerp(lengthMin, lengthMax, t);
+        length = Mathf.Lerp(lengthMin, lengthMax, _t);
         updateLineRenderer();
     }
 
