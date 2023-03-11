@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public static class ExtensionsRigidbody
+namespace Pool.Utilites
 {
-    public static void Reset(this Rigidbody _rigidbody)
+    public static class ExtensionsRigidbody
     {
-        _rigidbody.velocity = Vector3.zero;
-        _rigidbody.angularVelocity = Vector3.zero;
+        public static void Reset(this Rigidbody _rigidbody)
+        {
+            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.angularVelocity = Vector3.zero;
+        }
     }
 }

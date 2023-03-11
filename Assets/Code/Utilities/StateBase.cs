@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public abstract class StateBase : MonoBehaviour
+namespace Pool.Utilites
 {
-    public abstract void OnStateEnter();
-    public abstract void Execute();
-    public abstract void OnStateExit();
+    public abstract class StateBase : MonoBehaviour
+    {
+        public abstract void OnStateEnter();
+        public abstract void Execute();
+        public abstract void OnStateExit();
+    }
 }

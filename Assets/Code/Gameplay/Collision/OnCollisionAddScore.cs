@@ -1,3 +1,4 @@
+using Pool.Utilites.AutoSetup;
 using UnityEngine;
 
 public class OnCollisionAddScore : OnCollisionBase, IAutoSetupable

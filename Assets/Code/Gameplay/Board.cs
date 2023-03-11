@@ -1,3 +1,4 @@
+using Pool.Utilites.AutoSetup;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,7 @@ public class Board : MonoBehaviour, IAutoSetupable
         return false;
     }
 
+    [ContextMenu("AutoSetup")]
     public void AutoSetup()
     {
         balls = new();

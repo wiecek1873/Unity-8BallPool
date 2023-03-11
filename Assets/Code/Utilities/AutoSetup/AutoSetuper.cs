@@ -1,9 +1,9 @@
+using Pool.Utilites.AutoSetup;
 using UnityEngine;
 
 public class AutoSetuper : MonoBehaviour
 {
 #if UNITY_EDITOR
-
     [SerializeField] private bool onAwake = false;
 
     [ContextMenu("Auto setup")]

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class UI_Score : MonoBehaviour
 {
-    [SerializeField] private TMP_Text text;
+    [SerializeField] private TMP_Text text = null;
     [SerializeField] private ScoreCounter scoreCounter = null;
     [SerializeField] private string textPrefix = "Score:";
 
