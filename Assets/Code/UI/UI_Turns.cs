@@ -15,6 +15,14 @@ public class UI_Turns : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (turnCounter != null)
+        {
+            updateTurnText(turnCounter.GetTurn());
+        }
+    }
+
     private void OnDisable()
     {
         if (turnCounter != null)
@@ -25,12 +33,12 @@ public class UI_Turns : MonoBehaviour
 
     private void onTurnChanged(int _turn)
     {
-        throw new System.NotImplementedException();
+        updateTurnText(_turn);
     }
 
     private void updateTurnText(int _turn)
     {
-        if (turnCounter == null)
+        if (text == null || turnCounter == null)
         {
             return;
         }
