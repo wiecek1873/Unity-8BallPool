@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3265302166346431835
+--- !u!1001 &6047952966498981807
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5024595563416534067, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c637523e9e066a48bf2c59a91e71a8f, type: 2}
+      objectReference: {fileID: 2100000, guid: f5b8267220afc554ebc63d52968c2a88, type: 2}
     - target: {fileID: 8646525323271694228, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57,58 +57,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646525323271694232, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
       propertyPath: m_Name
-      value: Ball Blue
+      value: Ball Red
       objectReference: {fileID: 0}
-    - target: {fileID: 8646525323271694234, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2c637523e9e066a48bf2c59a91e71a8f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
---- !u!1 &6534177690782735043 stripped
+--- !u!1 &2598583399953625143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8646525323271694232, guid: 5c8344db31a31ec43b33f4ca4fb3497e, type: 3}
-  m_PrefabInstance: {fileID: 3265302166346431835}
+  m_PrefabInstance: {fileID: 6047952966498981807}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4599928949005052084
+--- !u!114 &78132617908884012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534177690782735043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd69ae3dd22a9ab479b95a34fc20c0ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6257710266826995796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534177690782735043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281e31cf77e4e88478ec6bb50fe10cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionHandler: {fileID: 4599928949005052084}
-  pointsCounter: {fileID: 0}
-  points: 10
-  collisionTag: Pole
---- !u!114 &3086004010070613191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534177690782735043}
+  m_GameObject: {fileID: 2598583399953625143}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b064cd80260c5c45ba5db80281590cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionHandler: {fileID: 4599928949005052084}
+  collisionHandler: {fileID: 8893191023421102157}
+  collisionTag: Pole
+--- !u!114 &8893191023421102157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598583399953625143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd69ae3dd22a9ab479b95a34fc20c0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8990121561442966663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598583399953625143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281e31cf77e4e88478ec6bb50fe10cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionHandler: {fileID: 8893191023421102157}
+  pointsCounter: {fileID: 0}
+  score: 10
   collisionTag: Pole

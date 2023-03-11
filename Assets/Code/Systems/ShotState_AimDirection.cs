@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShotStateAimDirection : ShotState
+public class ShotState_AimDirection : ShotState
 {
     [SerializeField] private Transform visualization = null;
     [SerializeField] private float maxDegreesDelta = 180f;

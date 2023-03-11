@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShotStateAimForce : ShotState
+public class ShotState_AimForce : ShotState
 {
     [SerializeField][Min(0f)] private float forceMin = 0.25f;
     [SerializeField][Min(0f)] private float forceMax = 5f;

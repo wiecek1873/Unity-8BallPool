@@ -6,6 +6,11 @@ public class Ball : MonoBehaviour
 
     [SerializeField] private Rigidbody rb;
 
+    private void OnDisable()
+    {
+        rb.Reset();
+    }
+
     public bool IsMoving()
     {
         return rb.velocity.magnitude > VELOCITY_MIN;

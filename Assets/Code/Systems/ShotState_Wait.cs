@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShotStateWait : ShotState
+public class ShotState_Wait : ShotState
 {
     [SerializeField] private Board board = null;
 

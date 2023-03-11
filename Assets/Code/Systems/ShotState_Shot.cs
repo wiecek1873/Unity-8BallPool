@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class ShotStateShot : ShotState
+public class ShotState_Shot : ShotState
 {
-    [SerializeField] private ShotStateAimDirection shotStateAimDirection = null;
-    [SerializeField] private ShotStateAimForce shotStateAimForce = null;
+    [SerializeField] private ShotState_AimDirection shotStateAimDirection = null;
+    [SerializeField] private ShotState_AimForce shotStateAimForce = null;
 
     public override void OnStateEnter() { }
 
