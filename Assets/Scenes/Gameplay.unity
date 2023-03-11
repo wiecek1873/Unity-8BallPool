@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &109894560
 Transform:
   m_ObjectHideFlags: 0
@@ -250,10 +250,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Blue (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -326,10 +322,6 @@ PrefabInstance:
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
@@ -502,10 +494,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Blue (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -578,10 +566,6 @@ PrefabInstance:
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
@@ -894,10 +878,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Red
       objectReference: {fileID: 0}
-    - target: {fileID: 2825578542263327694, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
 --- !u!4 &589984770 stripped
@@ -1149,10 +1129,6 @@ PrefabInstance:
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
@@ -1767,12 +1743,31 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2510084625276396650, guid: 9e052f783e6554b47a85e12bd8fe8cb0, type: 3}
   m_PrefabInstance: {fileID: 1242068722}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1416918479}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a87f944018c7ba41a79fa5b62f44483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1416918479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1605532112824337358, guid: 9e052f783e6554b47a85e12bd8fe8cb0, type: 3}
+  m_PrefabInstance: {fileID: 1242068722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1416918482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416918479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489e334b4e5e0684aa674905069e26a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 2100448736}
+  board: {fileID: 1794045649}
 --- !u!1001 &1436347801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1828,10 +1823,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Red (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2825578542263327694, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
 --- !u!4 &1436347802 stripped
@@ -1860,10 +1851,6 @@ PrefabInstance:
     - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_Name
       value: Ball Blue (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
@@ -2040,10 +2027,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Blue (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 6534177690782735043, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6534177690782735055, guid: b37b2478199ccb74086c3e2a30b43f28, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2160,10 +2143,6 @@ PrefabInstance:
     - target: {fileID: 2825578542263327694, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
       propertyPath: m_Name
       value: Ball Red (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2825578542263327694, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
@@ -2377,10 +2356,6 @@ PrefabInstance:
     - target: {fileID: 2825578542263327694, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
       propertyPath: m_Name
       value: Ball Red (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2825578542263327694, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca2aaf9fc29be074fb5afba7567a5c54, type: 3}

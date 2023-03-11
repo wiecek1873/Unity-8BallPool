@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class MoveBall : MonoBehaviour
 {
-    public bool CanPoke = true;
-
     [SerializeField] private PlayerInput playerInput = null;
+    [SerializeField] private Board board = null;
+
+    private Vector3 moveVector = default;
 
     private void Update()
     {
-        if (CanPoke)
-        {
+        //if (board.IsAnyBallMoving())
+        //{
+        //    return;
+        //}
 
-        }
+        Vector3 _direction = new Vector3(playerInput.GetHorizontalAxis(), 0f, playerInput.GetVerticalAxis()).normalized;
+        moveVector = _direction;
+
+        Debug.DrawLine(transform.position, transform.position + moveVector, Color.magenta, 0f);
     }
 }
