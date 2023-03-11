@@ -20,24 +20,22 @@ public class Shot : MonoBehaviour
         stateCurrent.Execute();
     }
 
-    //todo Make it simpler
     public void ChangeState(ShotState _nextState)
     {
-        if (_nextState == null)
-        {
-            if (stateCurrent != null)
-            {
-                stateCurrent.OnStateExit();
-            }
-            return;
-        }
-
         if (stateCurrent != null)
         {
             stateCurrent.OnStateExit();
         }
 
         stateCurrent = _nextState;
-        stateCurrent.OnStateEnter();
+
+        if (stateCurrent != null)
+        {
+            stateCurrent.OnStateEnter();
+        }
+        else
+        {
+            enabled = false;
+        }
     }
 }

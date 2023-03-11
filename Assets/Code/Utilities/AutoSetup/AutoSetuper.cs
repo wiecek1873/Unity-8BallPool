@@ -4,6 +4,7 @@ using UnityEngine;
 public class AutoSetuper : MonoBehaviour
 {
 #if UNITY_EDITOR
+    [Header("Editor Only")]
     [SerializeField] private bool onAwake = false;
 
     [ContextMenu("Auto setup")]

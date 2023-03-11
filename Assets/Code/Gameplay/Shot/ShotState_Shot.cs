@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ShotState_Shot : ShotState
 {
+    [Header("Shot")]
     [SerializeField] private ShotState_AimDirection shotStateAimDirection = null;
     [SerializeField] private ShotState_AimForce shotStateAimForce = null;
 

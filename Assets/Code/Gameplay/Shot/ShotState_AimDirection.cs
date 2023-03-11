@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ShotState_AimDirection : ShotState
 {
+    [Header("Aim Direction")]
     [SerializeField] private float maxDegreesDelta = 180f;
 
     private Quaternion direction = Quaternion.Euler(Vector3.forward);

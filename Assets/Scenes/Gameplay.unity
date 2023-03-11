@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 157762573}
   - component: {fileID: 157762574}
   m_Layer: 0
-  m_Name: AutoSetuper
+  m_Name: Auto Setuper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1752,7 +1752,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2303,7 +2303,7 @@ GameObject:
   - component: {fileID: 1258701525}
   - component: {fileID: 1258701526}
   m_Layer: 0
-  m_Name: TurnCounter
+  m_Name: Turn Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2759,7 +2759,7 @@ GameObject:
   - component: {fileID: 1686661676}
   - component: {fileID: 1686661677}
   m_Layer: 0
-  m_Name: PlayerPointsCounter
+  m_Name: Score Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3142,7 +3142,7 @@ GameObject:
   - component: {fileID: 2100448735}
   - component: {fileID: 2100448736}
   m_Layer: 0
-  m_Name: PlayerInput
+  m_Name: Player Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3189,6 +3189,10 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 1794045649}
+    - target: {fileID: 4636882684673495435, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
+      propertyPath: turnCounter
+      value: 
+      objectReference: {fileID: 1258701526}
     - target: {fileID: 4636882684961669202, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
       propertyPath: TargetBall
       value: 
@@ -3197,6 +3201,10 @@ PrefabInstance:
       propertyPath: PlayerInput
       value: 
       objectReference: {fileID: 2100448736}
+    - target: {fileID: 4636882684961669202, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
+      propertyPath: TurnCounter
+      value: 
+      objectReference: {fileID: 1258701526}
     - target: {fileID: 4636882684961669214, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
       propertyPath: m_RootOrder
       value: 4
