@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 1712943868326354916}
   m_Father: {fileID: 4636882684961669214}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &953568682667349836
 MonoBehaviour:
@@ -78,7 +78,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4636882684961669214}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4636882684673495435
 MonoBehaviour:
@@ -95,6 +95,7 @@ MonoBehaviour:
   context: {fileID: 4636882684961669202}
   nextState: {fileID: 4636882684804983519}
   board: {fileID: 0}
+  turnCounter: {fileID: 0}
 --- !u!1 &4636882684804983513
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ GameObject:
   - component: {fileID: 4636882684804983512}
   - component: {fileID: 4636882684804983519}
   m_Layer: 0
-  m_Name: Aim Direction
+  m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,8 +141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   context: {fileID: 4636882684961669202}
-  nextState: {fileID: 4636882686269393951}
-  maxDegreesDelta: 180
+  nextState: {fileID: 4636882685385930452}
+  directionMaxDeltaDegrees: 180
+  forceMin: 1
+  forceMax: 5
+  forceMaxDelta: 5
 --- !u!1 &4636882684961669215
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +176,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4636882684804983512}
-  - {fileID: 4636882686269393944}
   - {fileID: 4636882685385930453}
   - {fileID: 4636882684673495540}
   - {fileID: 3750884771764565180}
@@ -194,7 +197,6 @@ MonoBehaviour:
   TargetBall: {fileID: 0}
   PlayerInput: {fileID: 0}
   Visualization: {fileID: 953568682667349836}
-  TurnCounter: {fileID: 0}
   startState: {fileID: 4636882684804983519}
 --- !u!1 &4636882685385930454
 GameObject:
@@ -226,7 +228,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4636882684961669214}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4636882685385930452
 MonoBehaviour:
@@ -242,57 +244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: {fileID: 4636882684961669202}
   nextState: {fileID: 4636882684673495435}
-  shotStateAimDirection: {fileID: 4636882684804983519}
-  shotStateAimForce: {fileID: 4636882686269393951}
---- !u!1 &4636882686269393945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4636882686269393944}
-  - component: {fileID: 4636882686269393951}
-  m_Layer: 0
-  m_Name: Aim Force
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4636882686269393944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4636882686269393945}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4636882684961669214}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4636882686269393951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4636882686269393945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48bb01cf66ea4984596c8ae2c4f635d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  context: {fileID: 4636882684961669202}
-  nextState: {fileID: 4636882685385930452}
-  forceMin: 1
-  forceMax: 5
-  maxDelta: 5
 --- !u!1 &6068540167626534418
 GameObject:
   m_ObjectHideFlags: 0
