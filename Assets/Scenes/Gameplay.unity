@@ -3189,7 +3189,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2107676684}
   - component: {fileID: 2107676686}
-  - component: {fileID: 2107676685}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3212,14 +3211,6 @@ Transform:
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &2107676685
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107676683}
-  m_Enabled: 1
 --- !u!20 &2107676686
 Camera:
   m_ObjectHideFlags: 0
@@ -3270,14 +3261,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1702054673}
     m_Modifications:
+    - target: {fileID: 3167692702427164682, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
+      propertyPath: turnCounter
+      value: 
+      objectReference: {fileID: 1258701526}
     - target: {fileID: 4636882684673495435, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
       propertyPath: board
       value: 
       objectReference: {fileID: 1794045649}
-    - target: {fileID: 4636882684673495435, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
-      propertyPath: turnCounter
-      value: 
-      objectReference: {fileID: 1258701526}
     - target: {fileID: 4636882684961669202, guid: 3a3a804813c1d6e46bbd3cb44346248b, type: 3}
       propertyPath: TargetBall
       value: 

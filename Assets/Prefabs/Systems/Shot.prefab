@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 1712943868326354916}
   m_Father: {fileID: 4636882684961669214}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &953568682667349836
 MonoBehaviour:
@@ -48,6 +48,53 @@ MonoBehaviour:
   lineRenderer: {fileID: 959879132575621754}
   lengthMin: 0.33
   lengthMax: 1
+--- !u!1 &2498039353216004239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4924172217929121722}
+  - component: {fileID: 3167692702427164682}
+  m_Layer: 0
+  m_Name: NextTurn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4924172217929121722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2498039353216004239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4636882684961669214}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3167692702427164682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2498039353216004239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b1fc744a172fe479b54fc772eca8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  context: {fileID: 4636882684961669202}
+  nextState: {fileID: 4636882684804983519}
+  turnCounter: {fileID: 0}
 --- !u!1 &4636882684673495541
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,9 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   context: {fileID: 4636882684961669202}
-  nextState: {fileID: 4636882684804983519}
+  nextState: {fileID: 3167692702427164682}
   board: {fileID: 0}
-  turnCounter: {fileID: 0}
 --- !u!1 &4636882684804983513
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +224,7 @@ Transform:
   - {fileID: 4636882684804983512}
   - {fileID: 4636882685385930453}
   - {fileID: 4636882684673495540}
+  - {fileID: 4924172217929121722}
   - {fileID: 3750884771764565180}
   m_Father: {fileID: 0}
   m_RootOrder: 0
