@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bumper : MonoBehaviour
+public class OnCollisionBounce : MonoBehaviour
 {
     [SerializeField][Min(0f)] private float bounciness = 0.9f;
 
