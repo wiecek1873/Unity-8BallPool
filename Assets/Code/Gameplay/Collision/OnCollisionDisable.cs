@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class OnCollisionDisable : OnCollisionBase
+public class OnCollisionDisable : MonoBehaviour
 {
     [SerializeField] private string collisionTag = string.Empty;
 
-    protected override void onCollision(Collision _collision)
+    private void OnCollisionEnter(Collision _collision)
     {
         if (_collision.gameObject.CompareTag(collisionTag) == false)
         {

@@ -2,13 +2,13 @@ using Pool.Utilites.AutoSetup;
 using UnityEditor;
 using UnityEngine;
 
-public partial class OnCollisionAddScore : OnCollisionBase
+public partial class OnCollisionAddScore : MonoBehaviour
 {
     [SerializeField] private ScoreCounter pointsCounter = null;
     [SerializeField] private int score = 0;
     [SerializeField] private string collisionTag = string.Empty;
 
-    protected override void onCollision(Collision _collision)
+    private void OnCollisionEnter(Collision _collision)
     {
         if (_collision.gameObject.CompareTag(collisionTag) == false)
         {

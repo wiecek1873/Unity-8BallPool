@@ -82,22 +82,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281e31cf77e4e88478ec6bb50fe10cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionHandler: {fileID: 6004981786390529577}
   pointsCounter: {fileID: 0}
   score: 6
   collisionTag: Pole
---- !u!114 &6004981786390529577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534177690782735043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd69ae3dd22a9ab479b95a34fc20c0ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7303220981753760901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,5 +97,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b064cd80260c5c45ba5db80281590cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionHandler: {fileID: 6004981786390529577}
   collisionTag: Pole
