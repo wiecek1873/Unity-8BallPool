@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3750884771764565180
 Transform:
   m_ObjectHideFlags: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 959879132575621754}
-  lengthMin: 0.75
-  lengthMax: 2
+  lengthMin: 0.33
+  lengthMax: 1
 --- !u!1 &4636882684673495541
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712943868326354916}
   - component: {fileID: 959879132575621754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9fcfa6256d04f6d42ba0124f0bd4ab50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

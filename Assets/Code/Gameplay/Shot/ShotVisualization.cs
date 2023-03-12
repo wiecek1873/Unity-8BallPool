@@ -3,8 +3,8 @@ using UnityEngine;
 public class ShotVisualization : MonoBehaviour
 {
     [SerializeField] private LineRenderer lineRenderer = null;
-    [SerializeField] private float lengthMin = 0.75f;
-    [SerializeField] private float lengthMax = 2f;
+    [SerializeField] private float lengthMin = 0.33f;
+    [SerializeField] private float lengthMax = 1f;
 
     private Vector3 startPosition = default;
     private Vector3 direction = default;
@@ -23,7 +23,7 @@ public class ShotVisualization : MonoBehaviour
 
     public void SetDirection(Vector3 _direction)
     {
-        direction = _direction;
+        direction = _direction.normalized;
         updateLineRenderer();
     }
 
@@ -36,6 +36,6 @@ public class ShotVisualization : MonoBehaviour
     private void updateLineRenderer()
     {
         lineRenderer.SetPosition(0, startPosition);
-        lineRenderer.SetPosition(1, startPosition + direction * length);
+        lineRenderer.SetPosition(1, startPosition + -direction * length);
     }
 }
