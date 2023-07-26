@@ -1,3 +1,3 @@
-# Unity-8BallPool
+# Unity 8 Ball Pool
 
-Deprecated. 8 ball pool game made in Unity.
+8 ball pool game made in Unity.
